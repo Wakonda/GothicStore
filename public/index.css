@@ -1,0 +1,55 @@
+a.aliexpress {
+	background-color: #E52F20;
+}
+
+.bg-black {
+	background-color: black !important;
+}
+
+@font-face {
+	font-family: "OldLondon";
+	src: url("old_london/OldLondon.ttf") format("truetype");
+}
+
+.title_banner {
+	font-family: OldLondon;
+	font-size: 5em;
+}
+
+p.price span {
+	border: 1px solid #990000;
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+.nav-link {
+	color: white;
+}
+.black {
+	color: black;
+}
+.darkred {
+	color: #990000 !important;
+}
+.bg-darkred {
+	background-color: #990000 !important;
+}
+.page-item.active .page-link {
+	background-color: #990000;
+	border-color: #990000;
+}
+.page-link.arrow {
+	font-weight: bold;
+	font-family: monospace;
+}
+.page-link {
+	color: #990000;
+}
+.page-link:hover {
+	color: #990000;
+    background-color: #ffdada;
+    border-color: #ffb1b1;
+}
+.load-spinner {
+	color: #990000;
+}
