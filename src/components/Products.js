@@ -53,7 +53,7 @@ class Products extends React.Component {
 			textSearch = "&text=" + this.props.searchValue;
 
 		const url = process.env.REACT_APP_URL + "api/stores?page=" + this.state.currentPage + "&category=cloth&order[id]=desc" + textSearch;
-console.log(url)
+
 		fetch(url)
 		.then(res => res.json())
 		.then(
