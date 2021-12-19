@@ -50,7 +50,7 @@ class Products extends React.Component {
 		var textSearch = "";
 
 		if(this.props.searchValue !== "")
-			textSearch = "&text=" + this.props.searchValue;
+			textSearch = "&orsearch=" + this.props.searchValue;
 
 		const url = process.env.REACT_APP_URL + "api/stores?page=" + this.state.currentPage + "&category=cloth&order[id]=desc" + textSearch;
 
@@ -81,6 +81,14 @@ class Products extends React.Component {
 			return <div>Erreur : {error.message}</div>;
 		} else if (!isLoaded) {
 			return <div className="text-center"><div className="fa-3x"><i className="fas fa-spinner fa-pulse load-spinner"></i></div>Chargement…</div>;
+		} else if (items.length == 0) {
+			return (
+				<div>
+					<div className="alert alert-info">
+					Aucun résultat n'a été trouvé !
+					</div>
+				</div>
+			)
 		} else {
 			return (
 				<div>
