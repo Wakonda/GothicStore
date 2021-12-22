@@ -25,6 +25,9 @@ p.price span {
 .nav-link {
 	color: white;
 }
+div.img_container img {
+	width: 100%;
+}
 .black {
 	color: black;
 }

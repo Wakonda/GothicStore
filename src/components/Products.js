@@ -96,7 +96,7 @@ class Products extends React.Component {
 						{items.map(item => (
 							<div className="col-lg-3 col-md-4 col-sm-6">
 								<div className="card mb-4 shadow-sm">
-									<div className="text-center">{Parser(item.imageEmbeddedCode)}</div>
+									<div className="text-center img_container">{Parser(item.imageEmbeddedCode)}</div>
 									<div className="card-body">
 										<p className="text-center fw-bold">{item.title}</p>
 										{item.price > 0 && 
