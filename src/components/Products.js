@@ -48,7 +48,7 @@ class Products extends React.Component {
   
 	getDatas() {
 		var textSearch = "";
-
+console.log(this.props.searchValue)
 		if(this.props.searchValue !== "")
 			textSearch = "&orsearch=" + this.props.searchValue;
 

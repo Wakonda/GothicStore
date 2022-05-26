@@ -19,6 +19,11 @@ class App extends React.Component {
 	}
 
 	handleSearchChange (e) {
+		if (e.target.value == "")
+			this.setState({ searchValue: e.target.value }, function () {
+				this.search.toggleSearch();
+			})
+
 		this.setState({ searchValue: e.target.value });
 	}
 
