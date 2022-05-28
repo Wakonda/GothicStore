@@ -56,3 +56,9 @@ div.img_container img {
 .load-spinner {
 	color: #990000;
 }
+
+@media (max-width: 590px) {
+	.title_banner {
+		font-size: 3em;
+	}
+}
