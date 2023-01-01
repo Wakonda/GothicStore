@@ -50,7 +50,7 @@ class Products extends React.Component {
 		var textSearch = "";
 console.log(this.props.searchValue)
 		if(this.props.searchValue !== "")
-			textSearch = "&orsearch=" + this.props.searchValue;
+			textSearch = "&or_search=" + this.props.searchValue;
 
 		const url = process.env.REACT_APP_URL + "api/stores?page=" + this.state.currentPage + "&category=cloth&order[id]=desc" + textSearch;
 
